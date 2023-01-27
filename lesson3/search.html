@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+</head>
+
+<body>
+  <h1>Поиск по параметрам</h1>
+
+  <form action="https://fom.in.ua/echo" method="POST">
+    <fieldset>
+      <legend>Основные характеристики автомобиля</legend>
+      <div>
+        <label for="typecar">Тип кузова</label>
+        <select name="typecar" id="typecar">
+          <option value="sedan">Седан</option>
+          <option value="cupe">Купе</option>
+          <option value="hechback">Хетчбек</option>
+          <option value="cabriolet">Кабриолет</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="modelcar">Марка авто</label>
+        <select name="modelcar" id="modelcar">
+          <option value="audi">Audi</option>
+          <option value="subaru">Subaru</option>
+          <option value="volvo">Volvo</option>
+          <option value="bmw">BMW</option>
+          <option value="kia">KIA</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="country">Страна изготовитель</label>
+        <select name="country" id="country">
+          <option value="ua">Украина</option>
+          <option value="de">Германия</option>
+          <option value="ge">Грузия</option>
+          <option value="bg">Болгария</option>
+          <option value="uk">Великобритания</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Цена</legend>
+      <div>
+        <label for="pricefrom">От</label>
+        <input type="number" name="pricefrom" id="pricefrom" min="0" step="100" placeholder="Цена от">
+      </div>
+
+      <div>
+        <label for="priceto">До</label>
+        <input type="number" name="priceto" id="priceto" min="0" step="100" placeholder="Цена до">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Год выпуска</legend>
+      <div>
+        <label for="yearold">От</label>
+        <select name="yearold" id="yearold">
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="yearto">До</label>
+        <select name="yearto" id="yearto">
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Состояние авто</legend>
+      <div>
+        <input type="checkbox" name="tamoj" id="tamoj">
+        <label for="tamoj">Растаможена</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="usa" id="usa">
+        <label for="usa">Пригнана со штатов</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="credit" id="credit">
+        <label for="credit">В кредите</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="konfiscat" id="konfiscat">
+        <label for="konfiscat">Конфискат</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="dtp" id="dtp">
+        <label for="dtp">Участие в ДТП</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Технические характеристики</legend>
+      <div>
+        <label for="fuel">Тип топлева</label>
+        <select name="fuel" id="fuel">
+          <option value="diesel">Дизель</option>
+          <option value="petrol">Бензин</option>
+          <option value="gas">Газ</option>
+          <option value="electro">Электро</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="transmission">Тип коробки передач</label>
+        <select name="transmission" id="transmission">
+          <option value="manual">Ручная</option>
+          <option value="auto">Автоматическая</option>
+          <option value="robo">Роботизированная</option>
+          <option value="variator">Вариативная</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Дополнительные характеристики авто</legend>
+      <div>
+        <label for="color">Выберите цвет авто</label>
+        <select name="color" id="color">
+          <option value="red">Красный</option>
+          <option value="blue">Синий</option>
+          <option value="black">Черный</option>
+          <option value="yellow">Желтый</option>
+          <option value="purple">Фиолетовый</option>
+          <option value="pink">Розовый</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="checkbox" name="luk" id="luk">
+        <label for="luk">Люк</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="massage" id="massage">
+        <label for="massage">Массаж сидений</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="climat" id="climat">
+        <label for="climat">Климат контроль</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="zapaska" id="zapaska">
+        <label for="zapaska">Запасное колесо</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="bron" id="bron">
+        <label for="bron">Бронированый кузов</label>
+      </div>
+    </fieldset>
+
+    <div>
+      <button type="submit">Поиск</button>
+    </div>
+
+  </form>
+</body>
+
+</html>

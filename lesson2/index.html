@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson2</title>
+  <style>
+    table {
+      width: 700px;
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 1px solid;
+      height: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>Table #1</caption>
+    <!-- 1 строка -->
+    <tr>
+      <td colspan="3">My first table</td>
+    </tr>
+    <!-- 2 строка -->
+    <tr>
+      <td>First cell</td>
+      <td>Second cell</td>
+      <td rowspan="3">6 cells merged together</td>
+    </tr>
+    <!-- 3 строка -->
+    <tr>
+      <td colspan="2">2 cells merged into one</td>
+    </tr>
+    <!-- 4 строка -->
+    <tr>
+      <td>1st cell
+        3rd row</td>
+      <td>2nd cell
+        3rd row</td>
+    </tr>
+    <!-- 5 строка -->
+    <tr>
+      <td colspan="3">Do you like tables?</td>
+    </tr>
+  </table>
+</body>
+
+</html>
